@@ -11,8 +11,8 @@ export default function Rotas(){
             <BrowserRouter>
                 <Routes>
                     <Route path="/" exact element={<Login/>}/>
-                    <Route path="/books" exact element={<Books/>}/>
-                    <Route path="/book/new" exact element={<NewBook/>}/>
+                    <Route path="/books" element={<Books/>}/>
+                    <Route path="/book/new/:bookId" element={<NewBook/>}/>
                 </Routes>
             </BrowserRouter>
         
